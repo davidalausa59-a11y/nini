@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ninnie Couture</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    /* NAV */
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.85);
+      border-bottom: 2px solid #ff4da6;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+    }
+
+    nav h1 {
+      color: #ff4da6;
+      font-size: 20px;
+      padding: 5px;
+      letter-spacing: 2px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 70px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ff4da6;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .overlay {
+      background: rgba(0,0,0,0.7);
+      padding: 40px;
+      border-radius: 20px;
+      max-width: 900px;
+    }
+
+    h2 {
+      color: #ff4da6;
+      margin-bottom: 20px;
+    }
+
+    /* HERO */
+    #home {
+      background: url('https://images.unsplash.com/photo-1520975958225-5f1f5a7d1c0f?q=80&w=1600') center/cover no-repeat;
+    }
+
+    #about {
+      background: url('https://images.unsplash.com/photo-1521334884684-d80222895322?q=80&w=1600') center/cover no-repeat;
+    }
+
+    #services {
+      background: url('https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1600') center/cover no-repeat;
+    }
+
+    #collection {
+      background: url('https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1600') center/cover no-repeat;
+    }
+
+    #contact {
+      background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1600') center/cover no-repeat;
+    }
+
+    /* SERVICES GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid #ff4da6;
+    }
+
+    .contact-box {
+      margin-top: 20px;
+      line-height: 1.8;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px;
+      width: 100%;
+      background: #ff4da6;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #ff2f92;
+    }
+  </style>
+</head>
+<body>
+    <header>
+  <nav>
+    <h1>
+       NINNIE COUTURE
+    </h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="service.html">Services</a></li>
+      <li><a href="collection.html">Collection</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<!-- SERVICES -->
+<section id="services">
+  <div class="overlay">
+    <h2>Our Services</h2>
+    <div class="grid">
+      <div class="card">Custom Fashion Design</div>
+      <div class="card">Ready-to-Wear Collections</div>
+      <div class="card">Native & Traditional Attires</div>
+      <div class="card">Corporate & Office Wears</div>
+      <div class="card">Bridal & Wedding Outfits</div>
+      <div class="card">Fashion Styling</div>
+      <div class="card">Training & Mentorship</div>
+    </div>
+  </div>
+</section>
+</body>
